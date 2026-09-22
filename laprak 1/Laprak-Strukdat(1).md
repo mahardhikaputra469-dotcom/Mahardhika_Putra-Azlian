@@ -20,7 +20,7 @@ Linked list atau yang disebut juga senarai berantai adalah Salah satu bentuk str
 
 ## Guided 
 
-### 1. ...
+### 1. soal1
 
 ```C++
 #include <iostream>
@@ -43,14 +43,14 @@ int main() {
     return 0;
 }
 ```
-Guided 1 Menjelaskan Program menerima dua bilangan float, kemudian menghitung penjumlahan, pengurangan, perkalian, dan pembagian dari kedua bilangan tersebut.
+Guided 1 Menjelaskan program menerima dua bilangan float, kemudian menghitung penjumlahan, pengurangan, perkalian, dan pembagian dari kedua bilangan tersebut.
 
-### 2. ...
+### 2. soal2
 
 ```C++
 source code guided 2
 ```
-penjelasan singkat guided 2
+guided 2 Menjelaskan program menerima angka 0–100, kemudian mengubah angka tersebut menjadi bentuk tulisan, misalnya 79 menjadi “tujuh puluh sembilan”.
 
 ### 3. ...
 
