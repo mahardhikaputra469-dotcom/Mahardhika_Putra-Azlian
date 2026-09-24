@@ -102,10 +102,28 @@ penjelasan singkat guided 3
 
 ## Unguided 
 
-### 1. (isi dengan soal unguided 1)
+### 1. membuat program yang menerima input dua buah bilangan bertipe float.
 
 ```C++
-source code unguided 1
+#include <iostream>
+using namespace std;
+
+int main() {
+    float a, b;
+
+    cout << "Masukkan bilangan pertama: ";
+    cin >> a;
+
+    cout << "Masukkan bilangan kedua: ";
+    cin >> b;
+
+    cout << "Penjumlahan = " << a + b << endl;
+    cout << "Pengurangan = " << a - b << endl;
+    cout << "Perkalian   = " << a * b << endl;
+    cout << "Pembagian   = " << a / b << endl;
+
+    return 0;
+}
 ```
 ### Output Unguided 1 :
 
@@ -120,15 +138,56 @@ contoh :
 
 penjelasan unguided 1 
 
-### 2. (isi dengan soal unguided 2)
+### 2. sebuah program yang menerima masukan angka dan mengeluarkan output nilai angka tersebut dalam bentuk tulisan.
 
 ```C++
-source code unguided 2
+#include <iostream>
+using namespace std;
+
+int main() {
+    int angka;
+    cout << "Masukan Angka (0-100): ";
+    cin >> angka;
+
+    string satuan[] {
+        "nol", "satu", "dua", "tiga", "empat", "lima",
+        "enam", "tujuh", "delapan", "sembilan"
+    };
+
+    if (angka < 0 || angka > 100){
+        cout << "angka harus 0-100";
+    }
+    else if (angka < 10){
+        cout << satuan[angka];
+    }
+    else if (angka == 10){
+        cout << "sepuluh";
+    }
+    else if (angka == 11){
+        cout << "sebelas";
+    }
+    else if (angka < 20){
+        cout << satuan[angka - 10] <<"belas";
+    }
+    else if (angka < 100){
+        cout << satuan[angka / 10] << "puluh";
+
+        if (angka % 10 != 0){
+            cout << " " << satuan[angka % 10];
+        }
+    }
+    else {
+        cout << "seratus";
+    }
+    cout << endl;
+
+    return 0;
+}
 ```
 ### Output Unguided 2 :
 
 ##### Output 1
-![Screenshot Output Unguided 2_1](https://github.com/mahardhikaputra469-dotcom/Mahardhika_Putra-Azlian/blob/main/laprak%201/soal1.png)
+![Screenshot Output Unguided 2_1](https://github.com/mahardhikaputra469-dotcom/Mahardhika_Putra-Azlian/blob/main/laprak%201/soal2.png)
 
 contoh :
 ![Screenshot Output Unguided 2_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided2-1.png)
