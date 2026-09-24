@@ -93,12 +93,43 @@ int main() {
 ```
 guided 2 Menjelaskan program menerima angka 0–100, kemudian mengubah angka tersebut menjadi bentuk tulisan, misalnya 79 menjadi “tujuh puluh sembilan”.
 
-### 3. ...
+### 3. soal3
 
 ```C++
-source code guided 3
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+
+    cout << "Input: ";
+    cin >> n;
+    cout << "Output:" << endl;
+
+    for (int i = n; i >= 1; i--) {
+
+        for (int j = n; j > i; j--) {
+            cout << "  ";
+        }
+
+        for (int j = i; j >= 1; j--) {
+            cout << j << " ";
+        }
+        cout << "* ";
+
+        for (int j = 1; j <= i; j++) {
+            cout << j;
+            if (j < i) {
+                cout << " ";
+            }
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
 ```
-penjelasan singkat guided 3
+guided 3 menjelaskan Program menerima sebuah angka, kemudian menggunakan perulangan untuk membuat pola angka yang berbentuk mirror, dengan tanda * sebagai bagian tengahnya.
 
 ## Unguided 
 
@@ -129,9 +160,6 @@ int main() {
 
 ##### Output 1
 ![Screenshot Output Unguided 1_1](https://github.com/mahardhikaputra469-dotcom/Mahardhika_Putra-Azlian/blob/main/laprak%201/soal1.png)
-
-contoh :
-![Screenshot Output Unguided 1_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided1-1.png)
 
 ##### Output 2
 ![Screenshot Output Unguided 1_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
@@ -189,26 +217,51 @@ int main() {
 ##### Output 1
 ![Screenshot Output Unguided 2_1](https://github.com/mahardhikaputra469-dotcom/Mahardhika_Putra-Azlian/blob/main/laprak%201/soal2.png)
 
-contoh :
-![Screenshot Output Unguided 2_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided2-1.png)
-
 ##### Output 2
 ![Screenshot Output Unguided 2_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
 
 penjelasan unguided 2
 
-### 3. (isi dengan soal unguided 3)
+### 3. meminta kita membuat program yang menerima input berupa sebuah angka, kemudian menghasilkan pola output berbentuk mirror.
 
 ```C++
-source code unguided 3
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+
+    cout << "Input: ";
+    cin >> n;
+    cout << "Output:" << endl;
+
+    for (int i = n; i >= 1; i--) {
+
+        for (int j = n; j > i; j--) {
+            cout << "  ";
+        }
+
+        for (int j = i; j >= 1; j--) {
+            cout << j << " ";
+        }
+        cout << "* ";
+
+        for (int j = 1; j <= i; j++) {
+            cout << j;
+            if (j < i) {
+                cout << " ";
+            }
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
 ```
 ### Output Unguided 3 :
 
 ##### Output 1
-![Screenshot Output Unguided 3_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
-
-contoh :
-![Screenshot Output Unguided 3_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided3-1.png)
+![Screenshot Output Unguided 3_1](https://github.com/mahardhikaputra469-dotcom/Mahardhika_Putra-Azlian/blob/main/laprak%201/soal3.png)
 
 ##### Output 2
 ![Screenshot Output Unguided 3_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
